@@ -5,4 +5,11 @@ export default defineConfig({
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  theme: {
+    extend: {
+      fontFamily: {
+        'syne': ['Syne', 'sans-serif'],
+      },
+    },
+  },
 })

@@ -1,12 +1,15 @@
-import mainImage from '../assets/images/Main.png'
 import heroCenterImage from '../assets/images/hero-center.png'
+import lineArtImage from '../assets/images/line-art.png'
 
 function HeroSection() {
   return (
     <section 
-      className="min-h-screen bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center"
+      className="min-h-screen flex flex-col items-center justify-center relative"
       style={{
-        backgroundImage: `url(${mainImage})`
+        background: `url(${lineArtImage}), linear-gradient(to right, #FFEDE6, #F8F8FC, #E6FFE6)`,
+        backgroundSize: 'contain, contain',
+        backgroundPosition: 'center, center',
+        backgroundRepeat: 'no-repeat, no-repeat',
       }}
     >
       <div className="flex flex-col items-center justify-center text-center max-w-6xl mx-auto pt-6">
@@ -26,7 +29,7 @@ function HeroSection() {
           <span style={{ color: '#000000' }}>Well</span>
         </div>
         <h1 
-          className="text-4xl md:text-6xl font-bold mb-8 "
+          className="text-3xl md:text-6xl font-bold mb-8 px-2"
           style={{
             fontFamily: 'Syne',
             color: '#333333'
@@ -57,7 +60,7 @@ function HeroSection() {
           <img 
             src={heroCenterImage} 
             alt="Hero Center" 
-            className="max-w-full h-auto mobile-bounce"
+            className="max-w-full h-auto mobile-bounce pt-6"
             style={{
               animation: 'subtleBounce 1.5s ease-in-out infinite'
             }}

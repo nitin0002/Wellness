@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
+* {
+  font-family: 'Syne', sans-serif;
+}
+
 @keyframes subtleBounce {
   0%, 100% {
     transform: translateY(0);
