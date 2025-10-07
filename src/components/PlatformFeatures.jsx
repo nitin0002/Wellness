@@ -11,7 +11,7 @@ const PlatformFeatures = () => {
 
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 min-h-[85vh] border border-[#FBD4C9] m-10 rounded-[60px] bg-gradient-to-r from-[#FFEDE6] via-[#F8F8FC] to-[#E6FFE6]">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[90vw] mx-auto">
         <div className="text-center mb-16">
           <h1 className="text-4xl sm:text-5xl lg:text-4xl font-bold text-gray-900 mb-6">
             One platform for your mind and your future.

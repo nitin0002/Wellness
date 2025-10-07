@@ -3,7 +3,7 @@ import howItWorksImage from '../assets/images/howItWorks.png'
 const HowItWorks = () => {
   return (
     <section className="py-8 sm:py-16 px-4 sm:px-6 lg:px-8 min-h-screen">
-      <div className="max-w-full mx-auto px-4 sm:px-8 lg:px-36 py-8 sm:py-16 lg:py-28">
+      <div className="max-w-full mx-auto px-4 sm:px-8 lg:px-12 py-8 sm:py-16 lg:py-28">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
           <div className="flex flex-col justify-between h-full space-y-6 sm:space-y-8">
             <div className='space-y-4 sm:space-y-8'>

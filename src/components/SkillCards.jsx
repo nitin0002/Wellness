@@ -1,11 +1,11 @@
-import skill1Image from '../assets/images/skill-1.png'
-import skill2Image from '../assets/images/skill-2.png'
-import skill3Image from '../assets/images/skill-3.png'
+import skill1Image from '../assets/images/sk2.png'
+import skill2Image from '../assets/images/sk3.png'
+import skill3Image from '../assets/images/sk1.png'
 
 const SkillCards = () => {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8">
-      <div className=" mx-auto">
+      <div className="max-w-[90vw] mx-auto">
         <div className="text-center mb-16">
           <div className="py-16 px-8 mb-8">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-gray-900">
@@ -32,7 +32,7 @@ const SkillCards = () => {
               <img 
                 src={skill2Image} 
                 alt="Friendly Psychiatrist" 
-                className="w-48 h-48 object-contain"
+                className="w-96 h-96 object-contain"
               />
             </div>
           </div>
@@ -51,7 +51,7 @@ const SkillCards = () => {
               <img 
                 src={skill3Image} 
                 alt="Guided Wellness" 
-                className="w-48 h-48 object-contain"
+                className="w-96 h-96 object-contain"
               />
             </div>
           </div>
@@ -71,7 +71,7 @@ const SkillCards = () => {
             <img 
               src={skill1Image} 
               alt="Learning Hub" 
-              className="w-48 h-48 object-contain"
+              className="w-96 h-96 object-contain"
             />
           </div>
         </div>

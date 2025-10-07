@@ -12,7 +12,7 @@ const WhatMakesDifferent = () => {
 
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[90vw] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900">
@@ -35,7 +35,7 @@ const WhatMakesDifferent = () => {
           
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="bg-gradient-to-br from-[#FFE5D9] to-[#FFD1B3] rounded-3xl p-8 max-w-lg">
+              <div className="max-w-lg">
                 <img 
                   src={mentalWellnessImage} 
                   alt="Mental Wellness and Skills" 
