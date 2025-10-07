@@ -96,17 +96,17 @@ const Testimonials = () => {
     <section className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[90vw] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
-          <div className="space-y-6 lg:col-span-1">
+          <div className="space-y-6 lg:col-span-1 text-center lg:text-left">
             <p className="tracking-widest text-sm text-gray-500">TESTIMONIALS</p>
-            <h2 className="text-4xl sm:text-4xl font-bold text-gray-900 leading-tight">
+            <h2 className="text-xl sm:text-4xl font-bold text-gray-900 leading-tight">
               Trusted by learners and
               <br />
               wellness seekers
             </h2>
-            <p className="text-gray-600 text-lg m-0">
+            <p className="text-gray-600 text-sm sm:text-lg m-0">
               Hear how real people found support, built new skills, and moved forward with confidence.
             </p>
-            <div className="flex items-center gap-4 pt-2">
+            <div className="hidden lg:flex items-center gap-4 pt-2">
               <button
                 aria-label="Previous"
                 onClick={() => scrollByPage(-1)}
@@ -145,6 +145,23 @@ const Testimonials = () => {
               </div>
               <div className="pointer-events-none absolute inset-y-0 left-0 w-12 bg-gradient-to-r from-white to-transparent" />
               <div className="pointer-events-none absolute inset-y-0 right-0 w-12 bg-gradient-to-l from-white to-transparent" />
+            </div>
+            
+            <div className="flex lg:hidden items-center justify-center gap-4 pt-6">
+              <button
+                aria-label="Previous"
+                onClick={() => scrollByPage(-1)}
+                className="w-12 h-12 rounded-full bg-[#FFECE2] text-gray-900 flex items-center justify-center hover:opacity-80 transition"
+              >
+                ←
+              </button>
+              <button
+                aria-label="Next"
+                onClick={() => scrollByPage(1)}
+                className="w-12 h-12 rounded-full bg-[#1A100D] text-white flex items-center justify-center hover:opacity-90 transition"
+              >
+                →
+              </button>
             </div>
           </div>
         </div>
