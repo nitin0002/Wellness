@@ -37,11 +37,11 @@ const SkillCards = () => {
     <section className="py-2 sm:py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[90vw] mx-auto">
         <div className="text-center mb-16">
-          <div className="py-2 sm:py-16 px-8 mb-8">
-            <h1 className="text-xl sm:text-5xl lg:text-6xl font-bold mb-2 sm:mb-6 text-gray-900">
+          <div className="py-2 sm:pt-16 px-8 mb-2">
+            <h1 className="text-xl sm:text-4xl lg:text-4xl font-bold mb-2 sm:mb-6 text-gray-900">
               All you need, in one app.
             </h1>
-            <p className="text-md sm:text-2xl text-gray-600 max-w-4xl mx-auto">
+            <p className="text-md sm:text-2xl font-normal text-gray-600 max-w-4xl mx-auto">
               Discover simple tools to support your mind and grow your career — anytime, anywhere.
             </p>
           </div>

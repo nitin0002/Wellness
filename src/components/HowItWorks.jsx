@@ -21,6 +21,10 @@ const HowItWorks = () => {
                 In Tier 2 and Tier 3 cities across India, millions face the same struggles: confusion about careers, constant stress from studies or work, and the silent weight of loneliness or burnout. Yet, affordable help is hard to find – especially in your own language.
               </p>
             </div>
+            
+            <button className="bg-[#FF7A3C] hover:bg-orange-600 text-white font-semibold py-3 px-6 sm:py-4 sm:px-8 rounded-lg text-base sm:text-lg transition-colors duration-200 shadow-lg hover:shadow-xl max-w-72 w-full sm:w-auto hidden lg:block">
+              Find a Therapist
+            </button>
           </div>
           
           <div className="flex flex-col items-center justify-center lg:justify-end mt-8 lg:mt-0 order-2 lg:order-2">
@@ -30,7 +34,7 @@ const HowItWorks = () => {
                   <img 
                     src={howItWorksImage} 
                     alt="Person with emotional thoughts and feelings" 
-                    className="w-full h-auto max-w-xs sm:max-w-md mx-auto"
+                    className="w-full h-auto max-w-xs sm:max-w-72 mx-auto"
                   />
                 </div>
               </div>
@@ -41,11 +45,6 @@ const HowItWorks = () => {
             </button>
           </div>
           
-          <div className="hidden lg:block order-3 lg:order-3">
-            <button className="bg-[#FF7A3C] hover:bg-orange-600 text-white font-semibold py-3 px-6 sm:py-4 sm:px-8 rounded-lg text-base sm:text-lg transition-colors duration-200 shadow-lg hover:shadow-xl max-w-72 w-full sm:w-auto">
-              Find a Therapist
-            </button>
-          </div>
         </div>
       </div>
     </section>

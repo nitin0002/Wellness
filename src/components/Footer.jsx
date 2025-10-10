@@ -34,7 +34,7 @@ function Footer() {
               {linkGroups.map((group, gi) => (
                 <div key={gi} className="space-y-5">
                   {group.map((item, ii) => (
-                    <a key={`${gi}-${ii}`} href={item.href} className="block hover:opacity-70">{item.label}</a>
+                    <a key={`${gi}-${ii}`} href={item.href} className="block hover:opacity-70 text-normal text-lg">{item.label}</a>
                   ))}
                 </div>
               ))}
@@ -43,13 +43,13 @@ function Footer() {
           </div>
 
           <div className="relative bg-[#4A2D1F] text-white rounded-[28px] md:rounded-[36px] p-8 md:p-10 overflow-hidden min-h-[260px] flex flex-col lg:col-span-2">
-            <h3 className="text-3xl md:text-5xl font-bold leading-tight max-w-md">
+            <h3 className="text-3xl md:text-[44px] font-bold leading-tight max-w-md">
               {heroLines.map((line, i) => (
                 <span key={i} className="block">{line}</span>
               ))}
             </h3>
             <div className="mt-8">
-              <button className="w-full md:w-auto bg-white text-black rounded-full px-6 md:px-48 py-3 md:py-4 text-base md:text-lg hover:opacity-90">{ctaLabel}</button>
+              <button className="w-full md:w-auto bg-white text-black rounded-full px-6 md:px-48 py-3 md:py-4 text-base md:text-xl font-semibold hover:opacity-90">{ctaLabel}</button>
             </div>
             <img src={footerImg} alt="" className="pointer-events-none select-none absolute -right-2 top-2 w-40 md:w-56 lg:w-72" />
           </div>

@@ -13,22 +13,24 @@ const WhatMakesDifferent = () => {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[90vw] px-10 sm:px-0 mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="space-y-8">
-            <h1 className="text-xl sm:text-5xl lg:text-6xl font-bold text-gray-900">
-              What makes us different.
-            </h1>
-            
-            <div className="space-y-6">
-              {features.map((feature, index) => (
-                <div key={index} className="flex items-center space-x-4">
-                  <img src={checkIcon} alt="Check" className="w-8 h-8 flex-shrink-0" />
-                  <span className="text-sm sm:text-xl text-gray-700 font-medium">{feature}</span>
-                </div>
-              ))}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
+          <div className="flex flex-col justify-between space-y-8">
+            <div className="space-y-8">
+              <h1 className="text-xl sm:text-4xl lg:text-4xl font-bold text-gray-900">
+                What makes us different.
+              </h1>
+              
+              <div className="space-y-6">
+                {features.map((feature, index) => (
+                  <div key={index} className="flex items-center space-x-4">
+                    <img src={checkIcon} alt="Check" className="w-8 h-8 flex-shrink-0" />
+                    <span className="text-sm sm:text-2xl text-gray-700 font-medium">{feature}</span>
+                  </div>
+                ))}
+              </div>
             </div>
             
-            <button className="hidden lg:block bg-[#FF7A3C] hover:bg-orange-600 text-white font-semibold py-4 px-8 rounded-lg text-lg transition-colors duration-200 shadow-lg hover:shadow-xl">
+            <button className="hidden lg:block bg-[#FF7A3C] hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors duration-200 shadow-lg hover:shadow-xl self-start">
               Find a Therapist
             </button>
           </div>
