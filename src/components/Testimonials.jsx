@@ -2,22 +2,22 @@ import { useEffect, useRef } from 'react'
 
 const testimonials = [
   {
-    text: "I was struggling with stress and anxiety, but the mindfulness programs helped me regain balance.",
+    text: "The mindfulness programs helped me regain balance during a stressful period at work.",
     author: "Mark S.",
     meta: "41"
   },
   {
-    text: "The small audio sessions helped me deal with stress while preparing for exams.",
+    text: "As a student preparing for competitive exams, I was constantly stressed and couldn't focus. The small audio sessions helped me deal with stress while studying, and the breathing exercises between study sessions made a huge difference in my concentration and overall well-being.",
     author: "Ravi K.",
     meta: "24"
   },
   {
-    text: "I felt stuck and anxious. Short therapist-led sessions made it easy to start.",
+    text: "Short therapist-led sessions made it easy to start my mental health journey.",
     author: "Anna R.",
     meta: "28"
   },
   {
-    text: "Daily check-ins keep me consistent. I actually look forward to them now.",
+    text: "Daily check-ins keep me consistent with my mental health practices. I actually look forward to them now because they help me stay grounded and focused, and the personalized reminders motivate me to maintain healthy habits even on busy days.",
     author: "Neha P.",
     meta: "32"
   },
@@ -27,7 +27,7 @@ const testimonials = [
     meta: "35"
   },
   {
-    text: "Peer community feels safe and supportive. It changed how I handle tough days.",
+    text: "The peer community feels safe and supportive. It changed how I handle tough days and helped me realize I'm not alone in my mental health journey.",
     author: "Mira L.",
     meta: "27"
   }
@@ -133,10 +133,10 @@ const Testimonials = () => {
               {testimonials.map((t, idx) => (
                 <article
                   key={idx}
-                  className={`min-w-[280px] sm:min-w-[360px] lg:min-w-[420px] lg:min-h-[400px] ${bgByIndex(idx)} rounded-3xl p-8 snap-start`}
+                  className={`min-w-[280px] sm:min-w-[360px] lg:min-w-[420px] lg:min-h-[400px] ${bgByIndex(idx)} rounded-3xl p-8 snap-start flex flex-col justify-between`}
                 >
-                  <p className="text-lg sm:text-xl text-gray-800 leading-relaxed">{t.text}</p>
-                  <div className="flex items-center gap-3 pt-8">
+                  <p className="text-lg sm:text-xl text-gray-800 leading-relaxed line-clamp-6">{t.text}</p>
+                  <div className="flex items-center gap-3 pt-8 mt-auto">
                     <Avatar name={t.author} />
                     <p className="text-gray-800 font-medium">— {t.author}, {t.meta}</p>
                   </div>
